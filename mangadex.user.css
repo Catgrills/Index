@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Index
 @namespace      https://github.com/Catgrills/Index
-@version        1.0.1
+@version        1.0.2
 @description    An userstyle for MangaDex called Index.
 @author         Catgrills/Katgrills
 @preprocessor   uso
@@ -341,7 +341,7 @@
         border: none !important;
         box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
         padding-top: 10px !important;
-        padding-bottom: 12px !important;
+        padding-bottom: 14px !important;
         position: absolute;
         top: 0px !important;
         display: block !important;
@@ -652,6 +652,12 @@
     .tab-content #follows_update .row .flag {
         position: relative;
         top: -3px !important;
+    }
+
+    .tab-content #latest_update .border-bottom .fas.fa-book,
+    .tab-content #follows_update .border-bottom .fas.fa-book,
+    .list-group .border-bottom .fas.fa-book {
+        margin-left: -5px !important;
     }
 
     .float-right.btn-group {
@@ -1458,12 +1464,40 @@
         color: #FFF !important;
     }
 
+    #subject {
+        background: var(--card-bg-2);
+        border: none;
+        border-radius: 2px;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, .1);
+    }
+
+    #start_thread_button {
+        background: #019875 !important;
+    }
+
     .table thead th {
         border: none;
     }
 
     #content .table.table-md.edit tr:nth-of-type(2n) {
         background: var(--card-bg-2) !important;
+    }
+
+    .edit tr[id*="post_edit"] .form-group button {
+        background: var(--card-bg);
+        border: none;
+        border-radius: 2px;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
+        color: var(--primary-color) !important;
+        margin-bottom: 7px;
+        margin-left: 3px !important;
+    }
+
+    .edit #text {
+        background: var(--card-bg);
+        border: none;
+        border-radius: 2px;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
     }
 
     .btn.btn-secondary.post_reply_button {
