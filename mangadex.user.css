@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Index
 @namespace      https://github.com/Catgrills/Index
-@version        1.0.3
+@version        1.0.4
 @description    An userstyle for MangaDex called Index.
 @author         Catgrills/Katgrills
 @preprocessor   uso
@@ -1275,6 +1275,13 @@
 
     .reader-main img {
         box-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
+    }
+    
+    .reader.fit-horizontal .reader-main, 
+    .reader.fit-horizontal .reader-images, 
+    .reader.fit-horizontal .reader-image-wrapper, 
+    .reader.fit-horizontal .reader-images img {
+        max-width: 90% !important;
     }
 
     /* QUICK SEARCH */
