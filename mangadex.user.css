@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Index
 @namespace      https://github.com/Catgrills/Index
-@version        1.0.4
+@version        1.0.5
 @description    An userstyle for MangaDex called Index.
 @author         Catgrills/Katgrills
 @preprocessor   uso
@@ -39,7 +39,7 @@
 @-moz-document domain("mangadex.org") {
 
     /*[[theme]]*/
-
+    
     /* GENERAL */
 
     /** DESCRIPTION : change the elements of all page **/
@@ -1268,20 +1268,13 @@
         padding: 0px !important;
         margin-top: 120px;
     }
-   
+
     .reader.layout-horizontal .reader-images {
         padding-right: 0px !important;
     }
 
     .reader-main img {
         box-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
-    }
-    
-    .reader.fit-horizontal .reader-main, 
-    .reader.fit-horizontal .reader-images, 
-    .reader.fit-horizontal .reader-image-wrapper, 
-    .reader.fit-horizontal .reader-images img {
-        max-width: 90% !important;
     }
 
     /* QUICK SEARCH */
@@ -1434,6 +1427,47 @@
     #manga_add_form .custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
         color: var(--primary-color) !important;
         margin-top: 10px !important;
+    }
+
+    #content .large_logo.rounded.position-relative.mx-1.my-2 .car-caption.px-2.py-1 {
+        background: var(--card-bg-2);
+        box-shadow: none;
+        height: 110px !important;
+    }
+    
+    .btn-group.btn-group-xs.dropup button {
+        background-color: var(--card-bg);
+        background-image: none;
+        border: none !important;
+        border-radius: 2px !important;
+        box-shadow: none;
+        padding: 5px;
+        margin-top: 4px;
+    }
+    
+    .btn-group.btn-group-xs.dropup button * {
+        color: var(--primary-color) !important;
+        text-shadow: none !important;
+    }
+    
+    .btn-group.btn-group-xs.dropup button .fas {
+        filter: brightness(0) var(--invert);
+    }
+    
+    .btn-group.btn-group-xs.dropup .dropdown-toggle::after {
+        background: no-repeat url("https://i.imgur.com/OygFMxF.png") center;
+        background-size: cover;
+        border: none;
+        height: 15px !important;
+        width: 15px !important;
+        position: relative;
+        top: 6px;
+        filter: brightness(0) var(--invert) !important;
+    }
+    
+    .btn-group.btn-group-xs.dropup .btn.btn-secondary.dropdown-toggle.dropdown-toggle-split:focus {
+        background: var(--card-bg) !important;
+        box-shadow: none !important;
     }
 
     /* ADD */
@@ -1608,3 +1642,4 @@
     }
 
 }
+
