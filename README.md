@@ -7,7 +7,7 @@ Preview of <i>Index</i>.
 About
 -------------------------------
 
-<i>Index</i> is an user style for <i>MangaDex</i>.
+<i>Index</i> is a user style for <i>MangaDex</i>.
 
 User styles are CSS code designed to alter the appearance of one, some, or all sites.
 
