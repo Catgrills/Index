@@ -6,6 +6,7 @@
 @author         Catgrills/Katgrills
 @preprocessor   uso
 @var select theme 'Theme' {
+.navbar .container .dropdown-toggle::after
     "Light": `
     :root {
         --body-bg: #F0F1F5 !important;
@@ -404,7 +405,7 @@
 		width: 10px !important;
 		position: absolute;
 		top: 20px;
-		right: -15px;
+		right: -8px;
 		filter: brightness(0) var(--invert) !important;
 	}
 
