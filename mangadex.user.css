@@ -1667,7 +1667,7 @@
 	}
 
 	#msg_send_form input:focus {
-		box-shadow: none;
+		box-shadow: none !important;
 	}
 
 	/* INFO */
