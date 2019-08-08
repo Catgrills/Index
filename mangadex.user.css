@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Index
 @namespace      https://github.com/Catgrills/Index
-@version        1.1.0
+@version        1.1.1
 @description    An userstyle for MangaDex called Index.
 @author         Catgrills/Katgrills
 @preprocessor   uso
@@ -574,7 +574,9 @@
 		color: #FFF !important;
 		font-size: 14pt;
 		font-weight: bold;
+		padding-right: 20px;
 		padding-bottom: 9px;
+		padding-left: 20px;
 	}
 
 	.close span {
@@ -629,7 +631,7 @@
 		border: none !important;
 		box-shadow: 0px 1px 2Px rgba(0, 0, 0, .2) !important;
 	}
-	
+
 	/* HOME */
 
 	/** DESCRIPTION : change the elements of the home page **/
@@ -1109,6 +1111,13 @@
 
 	#content .table tbody tr a[href*="user"] {
 		color: #446CB3 !important;
+		line-height: 15pt;
+	}
+
+	.badge.badge-primary {
+		border-radius: 2px !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
+		margin-top: 10px !important;
 	}
 
 	#content .table tbody tr .well {
@@ -1217,6 +1226,11 @@
 		display: block !important;
 	}
 
+	.reader-controls .rounded.flag.flag-jp {
+		position: relative !important;
+		top: -4px !important;
+	}
+
 	#jump-chapter,
 	#jump-page,
 	#jump_chapter,
@@ -1308,6 +1322,13 @@
 
 	.reader-main img {
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
+	}
+
+	.reader.fit-horizontal .reader-main,
+	.reader.fit-horizontal .reader-images,
+	.reader.fit-horizontal .reader-image-wrapper,
+	.reader.fit-horizontal .reader-images img {
+		max-width: 90%;
 	}
 
 	/* QUICK SEARCH */
@@ -1471,13 +1492,13 @@
 		background: var(--card-bg-2);
 		border: 1px solid var(--border-color);
 		border-radius: 2px !important;
-		margin-top: 10px !important;
+		margin-top: 3px !important;
 	}
 
 	#search_titles_form .custom-checkbox .custom-control-input:checked ~ .custom-control-label::after,
 	#manga_add_form .custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
 		color: var(--primary-color) !important;
-		margin-top: 10px !important;
+		margin-top: 3px !important;
 	}
 
 	#content .large_logo.rounded.position-relative.mx-1.my-2 .car-caption.px-2.py-1 {
@@ -1691,5 +1712,5 @@
 	.table td {
 		padding: 0px !important;
 	}
-	
+
 }
