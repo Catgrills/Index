@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Index
 @namespace      https://github.com/Catgrills/Index
-@version        1.1.1
+@version        1.1.2
 @description    An userstyle for MangaDex called Index.
 @author         Catgrills/Katgrills
 @preprocessor   uso
@@ -13,7 +13,7 @@
         --card-bg: #FAFAFA !important;
         --card-bg-2: #EFEFEF !important;
         --header-bg: #F9F9F9 !important;
-        --header-bg-2: #F2F2F2 !important;
+        --header-bg-2: #F7F7F7 !important;
         --border-color: #E1E2E2 !important;
         --border-color-2: #BEBEBE !important;
         --primary-color: #212121 !important;
@@ -91,6 +91,7 @@
 		font-size: 14pt;
 		font-stretch: condensed;
 	}
+    
 
 	.alert.alert-warning {
 		background: #ED4C67;
@@ -104,6 +105,10 @@
 	#announcement,
 	#announcement * {
 		color: #FFF !important;
+	}
+    
+	#announcement button[aria-label="Close"] {
+		margin-top: -3px !important;
 	}
 
 	.dropdown-menu {
@@ -310,10 +315,8 @@
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
 	}
 
-	.alert-info,
 	.btn.btn-secondary.disabled,
 	#comment-button .comment-amount,
-	.dropdown-menu.dropdown-menu-right.show a[id="3"],
 	.footer,
 	#hide-header-button,
 	img[src*="banner"],
@@ -339,8 +342,8 @@
 	/** DESCRIPTION : change the elements of the header **/
 	.navbar {
 		background: var(--header-bg);
-		border: none !important;
-		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
+		border-bottom: 1px solid var(--border-color);
+        box-shadow: none;
 		padding-top: 10px !important;
 		padding-bottom: 14px !important;
 		position: absolute;
@@ -574,9 +577,9 @@
 		color: #FFF !important;
 		font-size: 14pt;
 		font-weight: bold;
-		padding-right: 20px;
+        padding-right: 20px;
 		padding-bottom: 9px;
-		padding-left: 20px;
+        padding-left: 20px;
 	}
 
 	.close span {
@@ -631,7 +634,7 @@
 		border: none !important;
 		box-shadow: 0px 1px 2Px rgba(0, 0, 0, .2) !important;
 	}
-
+	
 	/* HOME */
 
 	/** DESCRIPTION : change the elements of the home page **/
@@ -1111,9 +1114,9 @@
 
 	#content .table tbody tr a[href*="user"] {
 		color: #446CB3 !important;
-		line-height: 15pt;
+        	line-height: 15pt;
 	}
-
+    
 	.badge.badge-primary {
 		border-radius: 2px !important;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
@@ -1166,7 +1169,7 @@
 	}
 
 	.reader-images .alert {
-		background: #FF6B6B !important;
+		background: var(--card-bg) !important;
 	}
 
 	/* MANGA READER */
@@ -1230,7 +1233,7 @@
 		position: relative !important;
 		top: -4px !important;
 	}
-
+    
 	#jump-chapter,
 	#jump-page,
 	#jump_chapter,
@@ -1323,10 +1326,10 @@
 	.reader-main img {
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
 	}
-
-	.reader.fit-horizontal .reader-main,
-	.reader.fit-horizontal .reader-images,
-	.reader.fit-horizontal .reader-image-wrapper,
+    
+	.reader.fit-horizontal .reader-main, 
+	.reader.fit-horizontal .reader-images, 
+	.reader.fit-horizontal .reader-image-wrapper, 
 	.reader.fit-horizontal .reader-images img {
 		max-width: 90%;
 	}
@@ -1457,6 +1460,7 @@
 		background: #2C3E50;
 		border-radius: 2px;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1);
+        margin-top: 0px !important;
 	}
 
 	#content .border-bottom .badge,
@@ -1712,5 +1716,5 @@
 	.table td {
 		padding: 0px !important;
 	}
-
+	
 }
