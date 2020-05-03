@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Index
 @namespace      https://github.com/Catgrills/Index
-@version        1.1.4
+@version        1.1.5
 @description    An userstyle for MangaDex called Index.
 @author         Catgrills/Katgrills
 @preprocessor   uso
@@ -347,8 +347,8 @@
 	/** DESCRIPTION : change the elements of the header **/
 	.navbar {
 		background: var(--header-bg);
-		border-bottom: 1px solid var(--border-color);
-        box-shadow: none;
+		border-bottom: 1px solid var(--border-color) !important;
+        	box-shadow: none;
 		padding-top: 10px !important;
 		padding-bottom: 14px !important;
 		position: absolute;
