@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Index
 @namespace      https://github.com/Catgrills/Index
-@version        1.1.5
+@version        1.1.6
 @description    An userstyle for MangaDex called Index.
 @author         Catgrills/Katgrills
 @preprocessor   uso
@@ -327,6 +327,7 @@
 	img[src*="banner"],
 	.reader-page-bar .track,
 	#reader-controls-collapser,
+	#reader-controls-collapser-button,
 	.reader-controls-footer,
 	.reader-controls-groups,
 	.reader-controls-pages,
@@ -1208,6 +1209,11 @@
 		line-height: 25pt;
 		padding-left: 25px !important;
 		text-align: left !important;
+        	margin-top: 8px;
+	}
+
+	.reader-controls-wrapper .reader-controls-title .col.pt-2.manga-title-col {
+		padding: 0px !important;
 	}
 
 	.reader-controls-wrapper .reader-controls-title .manga-link {
@@ -1222,7 +1228,7 @@
 	.reader-controls-wrapper .reader-controls-title .d-none.d-lg-block {
 		font-stretch: condensed;
 		display: block !important;
-		width: 50%;
+		width: auto;
 	}
 
 	.reader-controls-wrapper .reader-controls-title .chapter-title {
@@ -1274,8 +1280,7 @@
 		background: transparent;
 	}
 
-	#comment-button,
-	#settings-button {
+	#comment-button {
 		background-image: none;
 		border-radius: 2px;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
@@ -1285,6 +1290,22 @@
 		position: fixed !important;
 		right: 10px !important;
 	}
+
+	#settings-button {
+		background-image: none;
+		border-radius: 2px;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
+		color: transparent;
+		font-size: 14pt !important;
+		width: 50px !important;
+		position: fixed !important;
+		right: 10px !important;
+	}
+
+	#settings-button .fas.fa-cog.fa-fw {
+		margin-left: 9px !important;
+	}
+
 
 	#comment-button,
 	.btn.btn-success.comment_button {
