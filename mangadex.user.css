@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Index
 @namespace      https://github.com/Catgrills/Index
-@version        1.1.7
+@version        1.1.8
 @description    An userstyle for MangaDex called Index.
 @author         Catgrills/Katgrills
 @preprocessor   uso
@@ -1476,7 +1476,6 @@
 	#content .border-bottom {
 		background: var(--card-bg);
 		border-color: var(--border-color) !important;
-		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
 		padding: 5px;
 	}
 
